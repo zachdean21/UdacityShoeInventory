@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding">
+
+        <LinearLayout
+            android:id="@+id/labels_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/values_linear_layout"
+            app:layout_constraintHorizontal_chainStyle="packed">
+
+            <TextView
+                android:id="@+id/shoe_name_label"
+                style="@style/ShoeDetailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_detail_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shoe_size_label"
+                style="@style/ShoeDetailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_detail_size" />
+
+            <TextView
+                android:id="@+id/shoe_company_label"
+                style="@style/ShoeDetailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_detail_company"/>
+
+            <TextView
+                android:id="@+id/shoe_description_label"
+                style="@style/ShoeDetailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_detail_description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/values_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/small_margin"
+            app:layout_constraintStart_toEndOf="@id/labels_linear_layout">
+
+            <TextView
+                android:id="@+id/shoe_name"
+                style="@style/ShoeDetailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoe Name"/>
+
+            <TextView
+                android:id="@+id/shoe_size"
+                style="@style/ShoeDetailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoe Size" />
+
+            <TextView
+                android:id="@+id/shoe_company"
+                style="@style/ShoeDetailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoe Company"/>
+
+            <TextView
+                android:id="@+id/shoe_description"
+                style="@style/ShoeDetailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoe Description" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labels_linear_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
