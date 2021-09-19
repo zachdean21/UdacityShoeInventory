@@ -12,6 +12,14 @@
             type="com.udacity.shoestore.screens.inventory.ShoeInventoryViewModel" />
     </data>
 
+    <!--
+        Constraint layout used here because of the side by side
+        cancel/save buttons. I could have used a linear layout
+        and then nested another linear layout within it for the
+        buttons but I think constraint layout is more suitable here
+        and easier to read.
+    -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

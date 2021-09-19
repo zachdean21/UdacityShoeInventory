@@ -3,6 +3,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--
+        Constraint layout used here to lay out the labels and
+        values side by side. I wanted the labels to occupy the same
+        width and the values to start at the same alignment and
+        constraint layout with vertical linear layouts came me a nice
+        solution. I used a linear layout within the constraint layout
+        as the labels and values were in a simple vertically stacked layout.
+    -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

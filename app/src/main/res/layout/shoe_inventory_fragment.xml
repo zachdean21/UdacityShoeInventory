@@ -2,6 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--
+        I used a Coordinator layout here because I was having issues
+        with aligning the FAB to the bottom right corner. I think the
+        issue may have stemmed from the activity_main.xml file because
+        it didn't have android:fillViewport=true on the NestedScrollView
+        but I haven't reverted it to a Constraint Layout as it was working
+        with a Coordinator Layout
+    -->
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
